@@ -75,13 +75,13 @@
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="passwordLogin" alignment="0" max="32767" attributes="0"/>
                           <Component id="logLogin" alignment="0" max="32767" attributes="0"/>
                           <Component id="usernameLogin" alignment="0" max="32767" attributes="0"/>
                           <Component id="jLabel1" alignment="0" max="32767" attributes="0"/>
                           <Component id="jLabel2" alignment="0" max="32767" attributes="0"/>
                           <Component id="login" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jLabel6" alignment="0" min="-2" pref="300" max="-2" attributes="0"/>
+                          <Component id="jLabel6" alignment="0" pref="300" max="32767" attributes="0"/>
+                          <Component id="passwordLogin" max="32767" attributes="0"/>
                       </Group>
                       <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                   </Group>
@@ -99,7 +99,7 @@
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="passwordLogin" min="-2" max="-2" attributes="0"/>
+                      <Component id="passwordLogin" min="-2" pref="28" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="login" min="-2" pref="30" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
@@ -111,8 +111,6 @@
           </Layout>
           <SubComponents>
             <Component class="javax.swing.JTextField" name="usernameLogin">
-            </Component>
-            <Component class="javax.swing.JTextField" name="passwordLogin">
             </Component>
             <Component class="javax.swing.JButton" name="login">
               <Properties>
@@ -160,6 +158,8 @@
                 <Property name="text" type="java.lang.String" value="Login"/>
               </Properties>
             </Component>
+            <Component class="javax.swing.JPasswordField" name="passwordLogin">
+            </Component>
           </SubComponents>
         </Container>
         <Container class="javax.swing.JPanel" name="jPanel3">
@@ -179,18 +179,18 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace pref="20" max="32767" attributes="0"/>
-                      <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="1" attributes="0">
+                          <Component id="passwordRegister" max="32767" attributes="0"/>
                           <Component id="usernameRegister" alignment="0" max="32767" attributes="0"/>
-                          <Component id="passwordRegister" alignment="0" max="32767" attributes="0"/>
-                          <Component id="logRegister" alignment="0" pref="300" max="32767" attributes="0"/>
+                          <Component id="logRegister" alignment="0" pref="299" max="32767" attributes="0"/>
                           <Component id="register" alignment="0" max="32767" attributes="0"/>
                           <Component id="jLabel4" alignment="0" max="32767" attributes="0"/>
-                          <Component id="jLabel3" max="32767" attributes="0"/>
+                          <Component id="jLabel3" alignment="0" max="32767" attributes="0"/>
                           <Component id="jLabel5" alignment="0" max="32767" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="20" max="32767" attributes="0"/>
+                      <EmptySpace pref="21" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -207,7 +207,7 @@
                       <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="passwordRegister" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
                       <Component id="register" min="-2" pref="30" max="-2" attributes="0"/>
                       <EmptySpace type="unrelated" max="-2" attributes="0"/>
                       <Component id="logRegister" min="-2" pref="27" max="-2" attributes="0"/>
@@ -218,8 +218,6 @@
           </Layout>
           <SubComponents>
             <Component class="javax.swing.JTextField" name="usernameRegister">
-            </Component>
-            <Component class="javax.swing.JTextField" name="passwordRegister">
             </Component>
             <Component class="javax.swing.JButton" name="register">
               <Properties>
@@ -266,6 +264,8 @@
                 <Property name="horizontalAlignment" type="int" value="0"/>
                 <Property name="text" type="java.lang.String" value="Cadastro"/>
               </Properties>
+            </Component>
+            <Component class="javax.swing.JPasswordField" name="passwordRegister">
             </Component>
           </SubComponents>
         </Container>
