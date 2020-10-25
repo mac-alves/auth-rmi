@@ -24,7 +24,7 @@
   <a href="#memo-license">Autor</a>
 </p>
 
-## :rocket: &nbsp;&nbsp;&nbsp; Technologies and Dependencies
+## :rocket: &nbsp;&nbsp;&nbsp; Technologies
 
 This project was developed with the following technologies:
 -  [Java v8](https://www.java.com/pt-BR/)
