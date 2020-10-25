@@ -103,7 +103,7 @@ $ rmiregistry &
  - [Project presentation](https://youtu.be/zpJR2cxbt-o)
 
 ## :memo: &nbsp;&nbsp;&nbsp; License
-This project is under the MIT license. See the [LICENSE](https://github.com/mac-alves/auth-rmi/blob/master/LICENSE) for more information.
+This project is under the MIT license. See the [LICENSE](https://github.com/mac-alves/auth-rmi/blob/main/LICENSE) for more information.
 
 ---
 
