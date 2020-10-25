@@ -14,8 +14,8 @@ import java.sql.*;
 public class Conection {
     private String local = "localhost";
     private String user = "postgres";
-    private String senha = "suasenha";
-    private final String porta = "5432";
+    private String senha = "postgres";
+    private final String porta = "5433";
     private final String banco = "rmi";
     private String strConexao = "jdbc:postgresql://"+ local +":" + porta +"/"+ banco;
     private String driverJDBC = "org.postgresql.Driver";
