@@ -127,34 +127,32 @@ public class UserServer extends UnicastRemoteObject implements UserRemoto {
   
     /**
      *
-     * @param login
-     * @param password
+     * @param id
      * @return
-     * @throws SQLException
+     * @throws java.rmi.RemoteException
      */
     @Override
-    public Boolean deleteUser(String login, String password) throws RemoteException{
+    public int deleteUser(int id) throws RemoteException{
         
         try {
-            int isExist = login(login, password);
+            User isExist = getUserById(id);
             
-            if (isExist == 0) {
-                return false;
+            if (isExist.getId() == 0) {
+                return -1;
             }
             
-            PreparedStatement ps = db.prepareStatement("DELETE FROM login lg WHERE lg.username = ? AND lg.password = ?");
-            ps.setString(1, login);
-            ps.setString(2, password);
+            PreparedStatement ps = db.prepareStatement("DELETE FROM login lg WHERE lg.id = ?");
+            ps.setInt(1, id);
             
             ps.executeUpdate();
             ps.close();
             
-            return true;
+            return 1;
         } catch (SQLException ex) {
             Logger.getLogger(UserServer.class.getName()).log(Level.SEVERE, null, ex);
         }
         
-        return false;
+        return 0;
     }
 
     @Override

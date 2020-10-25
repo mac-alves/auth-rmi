@@ -17,5 +17,5 @@ public interface UserRemoto extends Remote{
     User getUserById(int id) throws RemoteException;
     int login(String login, String password) throws RemoteException;
     Boolean register(String login, String password) throws RemoteException;
-    Boolean deleteUser(String login, String password) throws RemoteException;
+    int deleteUser(int id) throws RemoteException;
 }
